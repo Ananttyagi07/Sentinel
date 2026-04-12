@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Sentinel — Agentic Browser Architect",
+  "version": "1.0.0",
+  "description": "AI-powered research, knowledge sync, and contextual chat for your browser.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "side_panel": {
+    "default_path": "src/panel.html"
+  },
+  "action": {
+    "default_title": "Open Extension"
+  }
+}

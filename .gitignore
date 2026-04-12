@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+backend/.venv/
+backend/venv/
+backend/env/
+
+# uv lockfile (regenerate on install)
+backend/uv.lock
+
+# IDE / Editor
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node / extension
+extension/node_modules/
+extension/dist/
+extension/build/
+extension/.parcel-cache/
+.DS_Store
